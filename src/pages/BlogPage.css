@@ -1,0 +1,68 @@
+@import "../variables.css";
+.flex-box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.blogpost-inner-container{
+    max-width: 1000px;
+    background-color: var(--main-background-color-alpha);
+
+}
+.blogPost-title{
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 700;
+}
+.blogPost-cover{
+    width: 100%;
+    height: auto;
+
+}
+.blogPost-content{
+    padding: 10px;
+    font-size: large;
+    margin-bottom: 32px;
+}
+.blogPost-bottom-nav{
+    width: 100%;
+    padding: 24px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.arrow{
+    height: 40px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.left-arrow-box{
+    padding: 0px 40px;
+    cursor: pointer;
+}
+.right-arrow-box{
+    padding: 0px 40px;
+    cursor: pointer;
+}
+.right-arrow{
+    left: 0px;
+    cursor: pointer;
+
+}
+.left-arrow{
+    right: 0px;
+    cursor: pointer;
+}
+.right-arrow-box:hover .right-arrow{
+        left: 24px;
+}
+.left-arrow-box:hover .left-arrow{
+        right: 24px;
+}
+.blogPost-all-link{
+    background-color: var(--secondary-color);
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+}

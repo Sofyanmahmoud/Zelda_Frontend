@@ -1,0 +1,85 @@
+@import '../variables.css';
+
+.blog-post-card{
+    background-color: var(--secondary-color-a);
+    border-radius: 20px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink:1;
+    margin: 60px;
+    width: 200px;
+    text-decoration: none;
+}
+
+.blog-post-card span{
+    font-weight: 200;
+    font-size: normal;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 550px){
+    .blog-post-card{
+        padding: 12px 0px;
+    }
+}
+
+.blog-card-cover-image{
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 24px;
+    height:160px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-post-cover{
+    width: 300px;
+    height: auto;
+}
+
+.blog-post-card-title{
+    font-weight: 200;
+    font-size: larger;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    height: 3.6rem;
+}
+.blog-post-card-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.ball{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.blog-post-card:hover .blog-post-card-title{
+    color: var(--tertiary-color);
+}
+
+.blog-post-card:hover .blog-post-card-year{
+    color: var(--tertiary-color);
+}
+
+.blog-post-card:hover .blog-post-card-system{
+    color: var(--tertiary-color);
+}
+@keyframes WhiteToYellow{
+    0%{
+background-color: white;
+    }
+    50%{
+background-color: var(--tertiary-color);
+    }
+    100%{
+background-color: white;
+    }
+}
+.blog-post-card:hover .ball{
+    animation: WhiteToYellow 0.5s infinite ease-in-out;
+}
