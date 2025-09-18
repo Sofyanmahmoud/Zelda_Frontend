@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import AOS from 'aos'
-import 'aos/dist/aos.css'  // ✅ don't forget to import the CSS
+import 'aos/dist/aos.css'  
 import Index from "./routes/index.jsx"
 
 
